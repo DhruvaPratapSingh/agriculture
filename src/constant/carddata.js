@@ -54,3 +54,4 @@ export const cardData = [
       aos: "flip-right",
     },
   ];
+  

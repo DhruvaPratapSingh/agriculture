@@ -1,8 +1,14 @@
 import { useState } from "react";
 import { FaGraduationCap, FaBars, FaTimes } from "react-icons/fa";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    AOS.init({ duration: 3000,delay:100,once:true });
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

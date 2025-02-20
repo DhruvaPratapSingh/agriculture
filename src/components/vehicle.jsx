@@ -8,35 +8,35 @@ const Vehicle = () => {
   }, []);
 
   return (
-    <div className="w-full md:max-w-[1320px] p-6 mx-auto flex flex-col md:flex-row items-center gap-8">
-      <div data-aos="zoom-in" className="w-full md:w-1/2">
-        <img
-          src="/vehicle.webp"
-          alt="Vehicle"
-          className="rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
-        />
-      </div>
-      <div data-aos="fade-left" className="w-full md:w-1/2 p-6 bg-gradient-to-br from-[#1e3c72] via-[#2a5298] to-[#1e3c72] rounded-2xl text-white shadow-xl glassy">
-        <h1 className="text-4xl font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-transparent bg-clip-text"
-        data-aos="fade-up-right">
-          Modern Vehicles for Every Need
-        </h1>
-        <p className="text-lg mt-4" data-aos="fade-down-left">
-          Experience the best-in-class vehicles with top-notch safety, luxury, and performance.
-          Whether it's for personal or commercial use, we've got you covered.
-        </p>
-        <ul className="mt-4 space-y-2" data-aos="fade-right">
-          <li>✅ High Safety Standards</li>
-          <li>✅ Advanced Technology Integration</li>
-          <li>✅ Fuel Efficient & Eco-Friendly</li>
-        </ul>
-        <button className="mt-6 px-6 py-3 bg-white text-blue-800 font-semibold rounded-lg shadow-md hover:scale-105 transition-transform duration-300" data-aos="fade-up">
-          Explore More 🚗
-        </button>
+    <div className="w-full md:max-w-[1320px] md:p-6 mx-auto">
+      <div className="flex flex-col gap-8 md:flex-row w-full items-center justify-around p-6 backdrop-blur-lg rounded-lg shadow-lg">
+        <div
+          className="w-[90%] md:w-[45%] p-6 bg-gradient-to-br from-[#1e3c72] via-[#2a5298] to-[#1e3c72] rounded-2xl shadow-2xl backdrop-blur-md "
+          data-aos="fade-right"
+        >
+          <h1 className="text-4xl font-bold text-yellow-400 mb-4">Modern Vehicles</h1>
+          <p className="text-lg text-gray-200">
+            Discover cutting-edge vehicles equipped with the latest technology for safety and efficiency.
+          </p>
+          <ul className="mt-4 text-lg text-white">
+            <li className="flex items-center gap-2">✅ High Safety Standards</li>
+            <li className="flex items-center gap-2">✅ Fuel Efficient & Eco-Friendly</li>
+            <li className="flex items-center gap-2">✅ Advanced Technology Integration</li>
+          </ul>
+        </div>
+        <div
+          className="w-[90%] md:w-[45%] relative overflow-hidden rounded-lg shadow-lg"
+          data-aos="zoom-in"
+        >
+          <img
+            src="/vehicle.webp"
+            alt="Vehicle"
+            className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+          />
+        </div>
       </div>
     </div>
   );
 };
 
 export default Vehicle;
-
