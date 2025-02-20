@@ -8,8 +8,8 @@ const Footer = () => {
         
         {/* Left Section */}
         <div>
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-transparent bg-clip-text">
-            BrandName 🚀
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-transparent bg-clip-text flex gap-3 items-center">
+           AgriCulture <img className="w-14 h-14" src="/logo.webp"/>
           </h1>
           <p className="mt-2 text-sm opacity-80">
             © {new Date().getFullYear()} All rights reserved.
