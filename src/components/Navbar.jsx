@@ -21,9 +21,9 @@ flex justify-between items-center shadow-2xl top-0 z-50 rounded-b-2xl">
       <div className="flex items-center gap-4 font-bold"
       data-aos="fade-down-left">
         <span className="text-4xl text-green-900">
-          <FaGraduationCap />
+        <img className="w-14 h-14" src="/logo.webp"/>
         </span>
-        <h1 className="text-2xl text-green-900">School</h1>
+        <h1 className="text-2xl text-green-900">AgriCulture</h1>
       </div>
       <div className="md:hidden" onClick={toggleMenu}>
         {isOpen ? <FaTimes className="text-3xl cursor-pointer text-green-800" /> : <FaBars className="text-3xl cursor-pointer text-white" />}
