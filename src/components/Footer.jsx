@@ -6,7 +6,6 @@ const Footer = () => {
         <footer className="w-full bg-gradient-to-r from-[#1e3c72] via-[#2a5298] to-[#1e3c72] text-white py-8 px-6 md:px-16">
       <div className="max-w-[1320px] mx-auto flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6">
         
-        {/* Left Section */}
         <div>
           <h1 className="text-3xl font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-transparent bg-clip-text flex gap-3 items-center">
            AgriCulture <img className="w-14 h-14" src="/logo.webp"/>
@@ -16,7 +15,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Middle Section - Navigation */}
         <div>
           <ul className="flex gap-6 text-lg font-semibold">
             <li className="hover:text-yellow-300 transition-colors duration-300">

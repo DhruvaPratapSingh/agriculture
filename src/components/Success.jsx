@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import { successData } from "../constant/succesdata";
 const Success = () => {
   useEffect(() => {
-    AOS.init({ duration: 3000, once: false });
+    AOS.init({ duration: 1000, once: false });
   }, []);
 
   return (

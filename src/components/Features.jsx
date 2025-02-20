@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import { cardData } from "../constant/carddata";
 const Features = () => {
     useEffect(() => {
-        AOS.init({ duration: 3000, once: false,delay:500 });
+        AOS.init({ duration: 1000, once: false,delay:500 });
       }, []);
     
 

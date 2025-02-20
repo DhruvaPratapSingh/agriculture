@@ -1,7 +1,10 @@
+import { useEffect } from "react";
+import AOS from "aos";
 import "aos/dist/aos.css";
-
 const Home = () => {
-
+    useEffect(() => {
+        AOS.init({ duration: 1000, once: false,delay:500 });
+      }, []);
   return (
     <div className="w-full md:max-w-[1320px] md:p-6 mx-auto">
       <div className="flex flex-col gap-8 md:flex-row w-full items-center justify-around p-6 bg-gradient-to-br from-[#a8ff78] via-[#78ffd6] to-[#1e9600] rounded-2xl shadow-2xl backdrop-blur-md">
