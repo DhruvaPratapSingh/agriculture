@@ -1,7 +1,13 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import { cardData } from "../constant/carddata";
 const Features = () => {
-
+    useEffect(() => {
+        AOS.init({ duration: 3000, once: false,delay:500 });
+      }, []);
+    
 
   return (
     <div className="w-full md:max-w-[1320px] p-2 md:p-6 mx-auto">
